@@ -17,7 +17,9 @@
     "jsx": "react-jsx",
     "paths": {
       "$views": ["./src/views"],
-      "$components": ["./src/components"]
+      "$components": ["./src/components"],
+      "$types": ["./src/types.ts"],
+      "$utils": ["./src/utils.ts"]
     }
   },
   "include": ["src"]
