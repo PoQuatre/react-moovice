@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, MouseEvent } from "react";
 import { Card } from "react-bootstrap";
 
 interface Props {
@@ -6,6 +6,7 @@ interface Props {
   title: string;
   releaseDate: string;
   description: string;
+  onClick?: (event: MouseEvent<HTMLElement>) => void;
 }
 
 const DEFAULT_POSTER =
@@ -16,9 +17,10 @@ export const MovieCard: FunctionComponent<Props> = ({
   title,
   releaseDate,
   description,
+  onClick,
 }) => {
   return (
-    <Card style={{ height: "100%" }}>
+    <Card style={{ height: "100%" }} onClick={onClick}>
       <Card.Img
         variant="top"
         src={
