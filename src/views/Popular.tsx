@@ -18,9 +18,9 @@ export const Popular: FunctionComponent = () => {
 
   return (
     <>
-      <h1 className="text-center mt-4 mb-0">Popular</h1>;
+      <h1 className="text-center mt-4 mb-0">Popular</h1>
       <Container>
-        <Row xs={1} md={2} lg={4} className="g-4 mb-4">
+        <Row xs={1} md={2} lg={4} className="g-4 mb-4 justify-content-center">
           {movies.map((movie) => (
             <Col key={movie.id}>
               <MovieCard
